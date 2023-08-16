@@ -1,0 +1,93 @@
+body {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.card-body {
+  justify-content: center;
+  align-items: center;
+}
+.card-header h5 {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgContainer {
+  text-align: center;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(4, 200px);
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.btnContainer,
+.btns {
+  text-align: center;
+  margin: 0px auto;
+  width: 100px;
+  height: 30px;
+  color: whitesmoke;
+  background-color: rgb(14, 151, 32);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.btns:hover {
+  cursor: pointer;
+}
+
+.breedSelectBox {
+  text-align: center;
+}
+
+.breedSelectBox select {
+  background-color: wheat;
+  color: black;
+  padding: 15px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.breedSelectBox::before {
+  font-family: FontAwesome;
+
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.breedSelectBox:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.breedSelectBox select option {
+  padding: 30px;
+}
